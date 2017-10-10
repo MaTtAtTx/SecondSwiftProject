@@ -32,15 +32,18 @@ class ViewController: UIViewController
         {
             firstButton.backgroundColor = .blue
         }
-        view.backgroundColor = createRandomColor()
-        boringButton.backgroundColor = createRandomColor()
-        boringButton2.backgroundColor = createRandomColor()
-        boringButton3.backgroundColor = createRandomColor()
-        boringButton4.backgroundColor = createRandomColor()
-        
-    }
+        view.backgroundColor = randomColor()
+        boringButton.backgroundColor = randomColor()
+        boringButton2.backgroundColor = randomColor()
+        boringButton3.backgroundColor = randomColor()
+        boringButton4.backgroundColor = randomColor()
+        boringButton.setTitleColor(randomColor(), for: .normal)
+        boringButton2.setTitleColor(randomColor(), for: .normal)
+        boringButton3.setTitleColor(randomColor(), for: .normal)
+        boringButton4.setTitleColor(randomColor(), for: .normal)
+        }
     
-    private func createRandomColor() -> UIColor
+    private func randomColor() -> UIColor
     {
         let newColor : UIColor
         let redAmount = CGFloat (drand48())
