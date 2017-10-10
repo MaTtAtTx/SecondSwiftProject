@@ -41,7 +41,7 @@ class ViewController: UIViewController
         boringButton2.setTitleColor(randomColor(), for: .normal)
         boringButton3.setTitleColor(randomColor(), for: .normal)
         boringButton4.setTitleColor(randomColor(), for: .normal)
-        }
+    }
     
     private func randomColor() -> UIColor
     {
