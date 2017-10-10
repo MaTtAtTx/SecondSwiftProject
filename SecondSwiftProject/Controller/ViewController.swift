@@ -11,6 +11,10 @@ import UIKit
 class ViewController: UIViewController
 {
     @IBOutlet weak var firstButton: UIButton!
+    @IBOutlet weak var boringButton: UIButton!
+    @IBOutlet weak var boringButton2: UIButton!
+    @IBOutlet weak var boringButton3: UIButton!
+    @IBOutlet weak var boringButton4: UIButton!
     
     override func viewDidLoad()
     {
@@ -29,6 +33,11 @@ class ViewController: UIViewController
             firstButton.backgroundColor = .blue
         }
         view.backgroundColor = createRandomColor()
+        boringButton.backgroundColor = createRandomColor()
+        boringButton2.backgroundColor = createRandomColor()
+        boringButton3.backgroundColor = createRandomColor()
+        boringButton4.backgroundColor = createRandomColor()
+        
     }
     
     private func createRandomColor() -> UIColor
