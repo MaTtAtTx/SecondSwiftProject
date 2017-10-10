@@ -43,9 +43,9 @@ class ViewController: UIViewController
     private func createRandomColor() -> UIColor
     {
         let newColor : UIColor
-        let redAmount = CGFloat (Double (arc4random_uniform(256))/255.00)
-        let greenAmount = CGFloat (Double (arc4random_uniform(256))/255.00)
-        let blueAmount = CGFloat (Double (arc4random_uniform(256))/255.00)
+        let redAmount = CGFloat (drand48())
+        let greenAmount = CGFloat (drand48())
+        let blueAmount = CGFloat (drand48())
         newColor = UIColor(red: redAmount, green: greenAmount, blue: blueAmount, alpha: CGFloat(1.0))
         
         return newColor
