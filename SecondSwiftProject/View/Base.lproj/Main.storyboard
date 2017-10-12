@@ -55,6 +55,13 @@
                                     <color key="titleColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uh0-K9-vCW">
+                                <rect key="frame" x="258" y="33" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="funSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="Nxh-ty-Ooo"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -65,6 +72,7 @@
                         <outlet property="boringButton3" destination="UVf-Rd-DZV" id="Jwh-LU-jye"/>
                         <outlet property="boringButton4" destination="7sa-F6-rYj" id="e7I-bn-hM1"/>
                         <outlet property="firstButton" destination="htm-v5-iiC" id="Nfz-5E-mHL"/>
+                        <outlet property="funSwitch" destination="uh0-K9-vCW" id="Jew-km-XlZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
