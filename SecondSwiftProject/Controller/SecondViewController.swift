@@ -10,8 +10,10 @@ import UIKit
 
 public class SecondViewController : UIViewController
 {
+    lazy var colorTool : ColorTools = ColorTools()
     public override func viewDidLoad()
     {
         super.viewDidLoad()
+        view.backgroundColor = colorTool.randomColor()
     }
 }

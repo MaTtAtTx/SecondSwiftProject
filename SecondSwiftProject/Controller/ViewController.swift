@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController
 {
+    lazy var colorTool : ColorTools = ColorTools()
+
     @IBOutlet weak var firstButton: UIButton!
     @IBOutlet weak var boringButton: UIButton!
     @IBOutlet weak var boringButton2: UIButton!
@@ -22,23 +24,29 @@ class ViewController: UIViewController
     {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        view.backgroundColor = colorTool.randomColor()
+        firstButton.backgroundColor = colorTool.randomColor()
+        boringButton.backgroundColor = colorTool.randomColor()
+        boringButton2.backgroundColor = colorTool.randomColor()
+        boringButton3.backgroundColor = colorTool.randomColor()
+        boringButton4.backgroundColor = colorTool.randomColor()
     }
     
     @IBAction func firstMethod(_ sender: UIButton)
     {
         if (specialBoolean == true)
         {
-            view.backgroundColor = randomColor()
-            firstButton.backgroundColor = randomColor()
-            boringButton.backgroundColor = randomColor()
-            boringButton2.backgroundColor = randomColor()
-            boringButton3.backgroundColor = randomColor()
-            boringButton4.backgroundColor = randomColor()
-            firstButton.setTitleColor(randomColor(), for: .normal)
-            boringButton.setTitleColor(randomColor(), for: .normal)
-            boringButton2.setTitleColor(randomColor(), for: .normal)
-            boringButton3.setTitleColor(randomColor(), for: .normal)
-            boringButton4.setTitleColor(randomColor(), for: .normal)
+            view.backgroundColor = colorTool.randomColor()
+            firstButton.backgroundColor = colorTool.randomColor()
+            boringButton.backgroundColor = colorTool.randomColor()
+            boringButton2.backgroundColor = colorTool.randomColor()
+            boringButton3.backgroundColor = colorTool.randomColor()
+            boringButton4.backgroundColor = colorTool.randomColor()
+            firstButton.setTitleColor(colorTool.randomColor(), for: .normal)
+            boringButton.setTitleColor(colorTool.randomColor(), for: .normal)
+            boringButton2.setTitleColor(colorTool.randomColor(), for: .normal)
+            boringButton3.setTitleColor(colorTool.randomColor(), for: .normal)
+            boringButton4.setTitleColor(colorTool.randomColor(), for: .normal)
         }
         else
         {
@@ -54,7 +62,6 @@ class ViewController: UIViewController
             boringButton3.setTitleColor(.white, for: .normal)
             boringButton4.setTitleColor(.white, for: .normal)
         }
-        
     }
     
     @IBAction func funSwitch(_ sender: UISwitch)
@@ -67,17 +74,6 @@ class ViewController: UIViewController
         {
             specialBoolean = false
         }
-    }
-    
-    private func randomColor() -> UIColor
-    {
-        let newColor : UIColor
-        let redAmount = CGFloat (drand48())
-        let greenAmount = CGFloat (drand48())
-        let blueAmount = CGFloat (drand48())
-        newColor = UIColor(red: redAmount, green: greenAmount, blue: blueAmount, alpha: CGFloat(1.0))
-        
-        return newColor
     }
     
     override func didReceiveMemoryWarning()
