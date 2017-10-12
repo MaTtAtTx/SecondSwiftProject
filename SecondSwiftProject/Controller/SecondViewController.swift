@@ -10,10 +10,13 @@ import UIKit
 
 public class SecondViewController : UIViewController
 {
+    @IBOutlet weak var homeButton: UIButton!
     lazy var colorTool : ColorTools = ColorTools()
     public override func viewDidLoad()
     {
         super.viewDidLoad()
         view.backgroundColor = colorTool.randomColor()
+        homeButton.setTitleColor(colorTool.randomColor(), for: .normal)
+        homeButton.backgroundColor = colorTool.randomColor()
     }
 }
