@@ -134,6 +134,9 @@
                                 <rect key="frame" x="112" y="154" width="151" height="98"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Home"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="qy4-zD-wG1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hKQ-wq-mOm">
                                 <rect key="frame" x="109" y="379" width="154" height="100"/>
@@ -160,5 +163,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="Kya-BE-D50"/>
         <segue reference="1RE-VT-8QV"/>
+        <segue reference="qy4-zD-wG1"/>
     </inferredMetricsTieBreakers>
 </document>
