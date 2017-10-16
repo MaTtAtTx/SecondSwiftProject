@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0D177AAC1F8FB92D00C4BF34 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D177AAB1F8FB92D00C4BF34 /* SecondViewController.swift */; };
 		0D177AB01F8FBEDB00C4BF34 /* ColorTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D177AAF1F8FBEDB00C4BF34 /* ColorTools.swift */; };
+		0DDD05351F94FF7F009B1558 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDD05341F94FF7F009B1558 /* ThirdViewController.swift */; };
 		0DF630E21F8D058C00A0BF2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF630E11F8D058C00A0BF2D /* AppDelegate.swift */; };
 		0DF630E41F8D058C00A0BF2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF630E31F8D058C00A0BF2D /* ViewController.swift */; };
 		0DF630E71F8D058C00A0BF2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DF630E51F8D058C00A0BF2D /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		0D177AAB1F8FB92D00C4BF34 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		0D177AAF1F8FBEDB00C4BF34 /* ColorTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTools.swift; sourceTree = "<group>"; };
+		0DDD05341F94FF7F009B1558 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		0DF630DE1F8D058C00A0BF2D /* SecondSwiftProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecondSwiftProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DF630E11F8D058C00A0BF2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DF630E31F8D058C00A0BF2D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				0DF630E11F8D058C00A0BF2D /* AppDelegate.swift */,
 				0DF630E31F8D058C00A0BF2D /* ViewController.swift */,
 				0D177AAB1F8FB92D00C4BF34 /* SecondViewController.swift */,
+				0DDD05341F94FF7F009B1558 /* ThirdViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 			files = (
 				0D177AAC1F8FB92D00C4BF34 /* SecondViewController.swift in Sources */,
 				0DF630E41F8D058C00A0BF2D /* ViewController.swift in Sources */,
+				0DDD05351F94FF7F009B1558 /* ThirdViewController.swift in Sources */,
 				0DF630E21F8D058C00A0BF2D /* AppDelegate.swift in Sources */,
 				0D177AB01F8FBEDB00C4BF34 /* ColorTools.swift in Sources */,
 			);
