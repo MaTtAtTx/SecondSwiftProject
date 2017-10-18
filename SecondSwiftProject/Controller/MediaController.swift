@@ -19,7 +19,8 @@ class MediaController: UIViewController
     @IBOutlet weak var imageButton: UIButton!
     @IBOutlet weak var soundButton: UIButton!
     @IBOutlet weak var soundSlider: UISlider!
-
+    @IBOutlet weak var homeButton: UIButton!
+    
     @IBAction func changePicture() -> Void
     {
         switchImage()
