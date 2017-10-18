@@ -107,7 +107,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vln-Ra-IdE">
                                 <rect key="frame" x="112" y="284" width="151" height="98"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Next"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="WkS-Re-cJa" kind="show" id="Kya-BE-D50"/>
                                 </connections>
@@ -115,7 +117,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ha0-4T-5tY">
                                 <rect key="frame" x="91" y="466" width="193" height="126"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Last Page"/>
+                                <state key="normal" title="Last Page">
+                                    <color key="titleColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="x58-Tj-QQh" kind="show" id="mHS-LX-DoU"/>
                                 </connections>
@@ -145,7 +149,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hKQ-wq-mOm">
                                 <rect key="frame" x="112" y="275" width="154" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="lVI-SJ-2yK" kind="show" id="1RE-VT-8QV"/>
                                 </connections>
@@ -161,7 +167,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="biK-af-eaj">
                                 <rect key="frame" x="112" y="453" width="152" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Next"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="x58-Tj-QQh" kind="show" id="l4X-Li-BCM"/>
                                 </connections>
@@ -247,9 +255,9 @@
         <image name="BabyPenguin" width="250" height="250"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="s6S-UZ-eCb"/>
+        <segue reference="l4X-Li-BCM"/>
         <segue reference="Kya-BE-D50"/>
-        <segue reference="od5-xf-m0j"/>
-        <segue reference="au8-YI-Kkg"/>
+        <segue reference="1RE-VT-8QV"/>
+        <segue reference="qy4-zD-wG1"/>
     </inferredMetricsTieBreakers>
 </document>
