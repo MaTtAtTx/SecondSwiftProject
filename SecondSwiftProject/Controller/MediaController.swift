@@ -51,6 +51,7 @@ class MediaController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        view.backgroundColor = color.randomColor()
     }
 
     override func didReceiveMemoryWarning()
