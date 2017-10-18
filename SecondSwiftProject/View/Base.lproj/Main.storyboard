@@ -220,6 +220,7 @@
                         <viewLayoutGuide key="safeArea" id="Csr-9Y-YEM"/>
                     </view>
                     <connections>
+                        <outlet property="imageButton" destination="enN-08-me6" id="ad5-sp-1AX"/>
                         <outlet property="imageFrame" destination="NP2-83-pgJ" id="jTF-SO-R4y"/>
                         <outlet property="soundButton" destination="UAd-3M-sQ1" id="c1x-Yg-fXN"/>
                         <outlet property="soundSlider" destination="N7P-ba-Vci" id="zuM-Fe-06I"/>
