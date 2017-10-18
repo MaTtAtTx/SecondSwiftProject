@@ -12,6 +12,7 @@ public class SecondViewController : UIViewController
 {
     @IBOutlet weak var homeButton: UIButton!
     @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var lastButton: UIButton!
     lazy var colorTool : ColorTools = ColorTools()
     public override func viewDidLoad()
     {
@@ -21,5 +22,7 @@ public class SecondViewController : UIViewController
         homeButton.backgroundColor = colorTool.randomColor()
         nextButton.setTitleColor(colorTool.randomColor(), for: .normal)
         nextButton.backgroundColor = colorTool.randomColor()
+        lastButton.setTitleColor(colorTool.randomColor(), for: .normal)
+        lastButton.backgroundColor = colorTool.randomColor()
     }
 }
