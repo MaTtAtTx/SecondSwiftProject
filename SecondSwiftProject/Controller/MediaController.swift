@@ -27,7 +27,7 @@ class MediaController: UIViewController
     
     private func switchImage() -> Void
     {
-        if (imageCounter > 2)
+        if (imageCounter > 3)
         {
             imageCounter = 0
         }
@@ -39,6 +39,10 @@ class MediaController: UIViewController
         else if (imageCounter == 1)
         {
             imageFrame.image = UIImage(named: "BabySeal")
+        }
+        else if (imageCounter == 2)
+        {
+            imageFrame.image = UIImage(named: "CuteDog")
         }
         else
         {
