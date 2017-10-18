@@ -192,9 +192,12 @@
                                 <rect key="frame" x="0.0" y="538" width="188" height="129"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="1" alpha="0.72832833904109584" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Change Picture">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="changePicture" destination="x58-Tj-QQh" eventType="touchUpInside" id="fAe-06-SFZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UAd-3M-sQ1">
                                 <rect key="frame" x="186" y="538" width="189" height="129"/>
@@ -204,32 +207,31 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NP2-83-pgJ">
-                                <rect key="frame" x="0.0" y="112" width="375" height="199"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="N7P-ba-Vci">
                                 <rect key="frame" x="29" y="410" width="316" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </slider>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NP2-83-pgJ">
+                                <rect key="frame" x="62" y="86" width="250" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="Csr-9Y-YEM"/>
                     </view>
                     <connections>
-                        <outlet property="button1" destination="enN-08-me6" id="s05-A6-V5y"/>
-                        <outlet property="button2" destination="UAd-3M-sQ1" id="9Vg-Hc-3FO"/>
-                        <outlet property="image" destination="NP2-83-pgJ" id="HGN-iC-QHr"/>
-                        <outlet property="slider" destination="N7P-ba-Vci" id="xXQ-W3-HMS"/>
+                        <outlet property="imageFrame" destination="NP2-83-pgJ" id="jTF-SO-R4y"/>
+                        <outlet property="soundButton" destination="UAd-3M-sQ1" id="c1x-Yg-fXN"/>
+                        <outlet property="soundSlider" destination="N7P-ba-Vci" id="zuM-Fe-06I"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D4u-bm-xRa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1102" y="887"/>
+            <point key="canvasLocation" x="1101.5999999999999" y="886.50674662668678"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="mHS-LX-DoU"/>
+        <segue reference="s6S-UZ-eCb"/>
         <segue reference="Kya-BE-D50"/>
         <segue reference="od5-xf-m0j"/>
         <segue reference="Hs0-xD-fQo"/>

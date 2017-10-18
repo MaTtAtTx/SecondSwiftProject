@@ -7,13 +7,48 @@
 //
 
 import UIKit
+import AVFoundation
 
 class MediaController: UIViewController
 {
-    @IBOutlet weak var image: UIImageView!
-    @IBOutlet weak var slider: UISlider!
-    @IBOutlet weak var button1: UIButton!
-    @IBOutlet weak var button2: UIButton!
+    private var soundPlayer : AVAudioPlayer?
+    private var imageCounter : Int = 0
+    private lazy var color : ColorTools = ColorTools()
+    
+    @IBOutlet weak var imageFrame: UIImageView!
+    @IBOutlet weak var imageButton: UIButton!
+    @IBOutlet weak var soundButton: UIButton!
+    @IBOutlet weak var soundSlider: UISlider!
+
+    
+    @IBAction func changePicture() -> Void
+    {
+        switchImage()
+    }
+    
+    private func switchImage() -> Void
+    {
+        if (imageCounter > 2)
+        {
+            imageCounter = 0
+        }
+        
+        if (imageCounter == 0)
+        {
+            imageFrame.image = UIImage(named: "BabyPenguin")
+        }
+        else if (imageCounter == 1)
+        {
+            imageFrame.image = UIImage(named: "BabySeal")
+        }
+        else
+        {
+            imageFrame.image = UIImage(named: "CuteAnimals")
+        }
+        
+        imageCounter += 1
+    }
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
