@@ -214,10 +214,16 @@
                                 <state key="normal" title="Play/Pause">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="soundPlay" destination="x58-Tj-QQh" eventType="touchUpInside" id="ncm-D6-TZO"/>
+                                </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="N7P-ba-Vci">
                                 <rect key="frame" x="29" y="422" width="316" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="slidingSound:" destination="x58-Tj-QQh" eventType="valueChanged" id="XiV-uv-d3k"/>
+                                </connections>
                             </slider>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BabyPenguin" translatesAutoresizingMaskIntoConstraints="NO" id="NP2-83-pgJ">
                                 <rect key="frame" x="62" y="35" width="250" height="250"/>
@@ -258,6 +264,6 @@
         <segue reference="l4X-Li-BCM"/>
         <segue reference="Kya-BE-D50"/>
         <segue reference="1RE-VT-8QV"/>
-        <segue reference="qy4-zD-wG1"/>
+        <segue reference="au8-YI-Kkg"/>
     </inferredMetricsTieBreakers>
 </document>
